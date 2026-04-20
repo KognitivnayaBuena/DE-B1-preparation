@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.backBtn {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  transition: background 0.15s;
+}
+
+.backBtn:hover {
+  background: var(--color-border);
+}
+
+.topicName {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+}
+
+.progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  padding: 8px 4px;
+}
+
+.stats {
+  font-weight: 600;
+}
+
+.statGreen {
+  color: var(--color-accent);
+}
+
+.statRed {
+  color: var(--color-danger);
+}
