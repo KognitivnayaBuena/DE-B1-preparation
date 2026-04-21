@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import type { CardExample } from '../../types';
 import styles from './Flashcard.module.css';
 
 interface FlashcardProps {
   german: string;
   russian: string;
+  examples?: CardExample[];
   rememberedCount: number;
   onRemember: () => void;
   onForgot: () => void;
@@ -12,7 +14,7 @@ interface FlashcardProps {
 
 type CheckResult = 'idle' | 'correct' | 'wrong';
 
-export default function Flashcard({ german, russian, rememberedCount, onRemember, onForgot, onSkip }: FlashcardProps) {
+export default function Flashcard({ german, russian, examples, rememberedCount, onRemember, onForgot, onSkip }: FlashcardProps) {
   const [showTranslation, setShowTranslation] = useState(false);
   const [input, setInput] = useState('');
   const [checkResult, setCheckResult] = useState<CheckResult>('idle');
@@ -37,7 +39,19 @@ export default function Flashcard({ german, russian, rememberedCount, onRemember
       <div className={styles.badge}>{rememberedCount} / 10</div>
       <p className={styles.text}>{german}</p>
       {showTranslation ? (
-        <p className={styles.translation}>{russian}</p>
+        <div className={styles.reveal}>
+          <p className={styles.translation}>{russian}</p>
+          {examples && examples.length > 0 && (
+            <ul className={styles.examples}>
+              {examples.map((ex, i) => (
+                <li key={i} className={styles.exampleItem}>
+                  <p className={styles.exampleGerman}>{ex.german}</p>
+                  <p className={styles.exampleRussian}>{ex.russian}</p>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       ) : (
         <button className={styles.btnShow} onClick={() => setShowTranslation(true)}>
           Показать перевод

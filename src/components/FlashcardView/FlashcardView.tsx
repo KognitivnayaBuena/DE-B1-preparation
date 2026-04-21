@@ -55,6 +55,7 @@ export default function FlashcardView() {
         key={cardId}
         german={cardData.german}
         russian={cardData.russian}
+        examples={cardData.examples}
         rememberedCount={rememberedCount}
         onRemember={handleRemember}
         onForgot={handleForgot}

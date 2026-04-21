@@ -1,8 +1,14 @@
+export interface CardExample {
+  german: string;
+  russian: string;
+}
+
 export interface CardData {
   id: string;
   topicId: string;
   german: string;
   russian: string;
+  examples?: CardExample[];
 }
 
 export interface Topic {

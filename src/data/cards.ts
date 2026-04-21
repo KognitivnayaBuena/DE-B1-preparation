@@ -11,6 +11,8 @@ export const topics: Topic[] = [
   { id: 'topic8', name: 'Здоровье, проблемы, решения' },
   { id: 'topic9', name: 'Мнение, обсуждение, разговорная часть' },
   { id: 'topic10', name: 'Письма, запросы, жалобы, формальные фразы' },
+  { id: 'topic11', name: 'Важные глаголы B1 (100 шт.)' },
+  { id: 'topic12', name: 'Важные прилагательные B1 (100 шт.)' },
 ];
 
 export const cards: CardData[] = [
@@ -333,4 +335,808 @@ export const cards: CardData[] = [
   { id: 'topic10_028', topicId: 'topic10', german: 'Ich bedanke mich im Voraus, obwohl ich weiß, dass Sie gerade viel zu tun haben.', russian: 'Заранее благодарю, хотя я знаю, что у вас сейчас много дел.' },
   { id: 'topic10_029', topicId: 'topic10', german: 'Da ich Ihre Antwort dringend brauche, melde ich mich noch einmal bei Ihnen.', russian: 'Так как мне срочно нужен ваш ответ, я обращаюсь к вам ещё раз.' },
   { id: 'topic10_030', topicId: 'topic10', german: 'Ich hoffe, dass wir das Missverständnis schnell klären können.', russian: 'Я надеюсь, что мы сможем быстро прояснить недоразумение.' },
+
+  // === Topic 11: Важные глаголы B1 (100 шт.) ===
+  { id: 'topic11_001', topicId: 'topic11', german: 'verhandeln', russian: 'вести переговоры · verhandelte, hat verhandelt', examples: [
+    { german: 'Wir verhandeln gerade über einen neuen Vertrag.', russian: 'Мы сейчас ведём переговоры о новом контракте.' },
+    { german: 'Der Chef hat lange mit dem Kunden verhandelt.', russian: 'Начальник долго вёл переговоры с клиентом.' },
+  ] },
+  { id: 'topic11_002', topicId: 'topic11', german: 'bewältigen', russian: 'справляться (с Akk) · bewältigte, hat bewältigt', examples: [
+    { german: 'Ich hoffe, dass ich diese Aufgabe allein bewältigen kann.', russian: 'Надеюсь, я смогу справиться с этой задачей сам(а).' },
+    { german: 'Sie hat den Stress in der Prüfung gut bewältigt.', russian: 'Она хорошо справилась со стрессом на экзамене.' },
+  ] },
+  { id: 'topic11_003', topicId: 'topic11', german: 'ermöglichen', russian: 'делать возможным, позволять · ermöglichte, hat ermöglicht', examples: [
+    { german: 'Das neue Programm ermöglicht es mir, von zu Hause zu arbeiten.', russian: 'Новая программа позволяет мне работать из дома.' },
+    { german: 'Dank des Stipendiums wurde mir das Studium ermöglicht.', russian: 'Благодаря стипендии у меня появилась возможность учиться.' },
+  ] },
+  { id: 'topic11_004', topicId: 'topic11', german: 'berücksichtigen', russian: 'учитывать, принимать во внимание · berücksichtigte, hat berücksichtigt', examples: [
+    { german: 'Bitte berücksichtigen Sie meine Vorschläge bei der Planung.', russian: 'Пожалуйста, учтите мои предложения при планировании.' },
+    { german: 'Bei der Entscheidung müssen wir auch die Kosten berücksichtigen.', russian: 'При принятии решения мы должны учитывать и расходы.' },
+  ] },
+  { id: 'topic11_005', topicId: 'topic11', german: 'vereinbaren', russian: 'договариваться (о чём-л.) · vereinbarte, hat vereinbart', examples: [
+    { german: 'Können wir einen Termin für nächste Woche vereinbaren?', russian: 'Можем договориться о встрече на следующей неделе?' },
+    { german: 'Wir haben vereinbart, uns um drei Uhr am Bahnhof zu treffen.', russian: 'Мы договорились встретиться в три часа на вокзале.' },
+  ] },
+  { id: 'topic11_006', topicId: 'topic11', german: 'verschieben', russian: 'переносить, откладывать · verschob, hat verschoben', examples: [
+    { german: 'Ich muss unser Treffen leider auf morgen verschieben.', russian: 'К сожалению, мне придётся перенести нашу встречу на завтра.' },
+    { german: 'Verschiebe nicht alles auf später.', russian: 'Не откладывай всё на потом.' },
+  ] },
+  { id: 'topic11_007', topicId: 'topic11', german: 'erledigen', russian: 'выполнять, улаживать · erledigte, hat erledigt', examples: [
+    { german: 'Ich muss heute noch ein paar Sachen erledigen.', russian: 'Мне сегодня ещё нужно сделать несколько дел.' },
+    { german: 'Die Arbeit ist schon erledigt.', russian: 'Работа уже сделана.' },
+  ] },
+  { id: 'topic11_008', topicId: 'topic11', german: 'beantragen', russian: 'подавать заявление · beantragte, hat beantragt', examples: [
+    { german: 'Sie hat einen neuen Pass beantragt.', russian: 'Она подала заявление на новый паспорт.' },
+    { german: 'Man kann das Visum online beantragen.', russian: 'Визу можно оформить онлайн.' },
+  ] },
+  { id: 'topic11_009', topicId: 'topic11', german: 'sich beschäftigen mit', russian: 'заниматься чем-л. · beschäftigte, hat beschäftigt', examples: [
+    { german: 'In meiner Freizeit beschäftige ich mich mit Fotografie.', russian: 'В свободное время я занимаюсь фотографией.' },
+    { german: 'Er beschäftigt sich seit Jahren mit deutscher Geschichte.', russian: 'Он уже много лет занимается немецкой историей.' },
+  ] },
+  { id: 'topic11_010', topicId: 'topic11', german: 'verzichten auf + Akk', russian: 'отказываться (от чего-л.) · verzichtete, hat verzichtet', examples: [
+    { german: 'Ich verzichte gern auf Zucker.', russian: 'Я с удовольствием отказываюсь от сахара.' },
+    { german: 'Auf Urlaub möchte ich auf keinen Fall verzichten.', russian: 'От отпуска я точно не хочу отказываться.' },
+  ] },
+  { id: 'topic11_011', topicId: 'topic11', german: 'vermeiden', russian: 'избегать · vermied, hat vermieden', examples: [
+    { german: 'Versuche, typische Fehler zu vermeiden.', russian: 'Старайся избегать типичных ошибок.' },
+    { german: 'Ich vermeide es, spät zu essen.', russian: 'Я избегаю есть поздно.' },
+  ] },
+  { id: 'topic11_012', topicId: 'topic11', german: 'entscheiden', russian: 'решать · entschied, hat entschieden', examples: [
+    { german: 'Du musst selbst entscheiden, was du willst.', russian: 'Ты сам(а) должен(на) решить, чего хочешь.' },
+    { german: 'Wir haben uns für die günstigere Variante entschieden.', russian: 'Мы решились на более дешёвый вариант.' },
+  ] },
+  { id: 'topic11_013', topicId: 'topic11', german: 'erkennen', russian: 'узнавать, распознавать · erkannte, hat erkannt', examples: [
+    { german: 'Ich habe dich sofort an deiner Stimme erkannt.', russian: 'Я тебя сразу узнал(а) по голосу.' },
+    { german: 'Er erkennt seine Fehler leider nicht.', russian: 'Он, к сожалению, не признаёт своих ошибок.' },
+  ] },
+  { id: 'topic11_014', topicId: 'topic11', german: 'betrachten', russian: 'рассматривать · betrachtete, hat betrachtet', examples: [
+    { german: 'Ich betrachte das Problem aus einer anderen Perspektive.', russian: 'Я рассматриваю проблему с другой точки зрения.' },
+    { german: 'Sie betrachtete das Bild lange.', russian: 'Она долго рассматривала картину.' },
+  ] },
+  { id: 'topic11_015', topicId: 'topic11', german: 'ablehnen', russian: 'отклонять, отказывать · lehnte ab, hat abgelehnt', examples: [
+    { german: 'Er hat mein Angebot leider abgelehnt.', russian: 'К сожалению, он отклонил моё предложение.' },
+    { german: 'Ich lehne es ab, am Wochenende zu arbeiten.', russian: 'Я отказываюсь работать по выходным.' },
+  ] },
+  { id: 'topic11_016', topicId: 'topic11', german: 'zustimmen', russian: 'соглашаться · stimmte zu, hat zugestimmt', examples: [
+    { german: 'Ich stimme dir völlig zu.', russian: 'Я с тобой полностью согласен(на).' },
+    { german: 'Der Chef hat meinem Vorschlag zugestimmt.', russian: 'Начальник согласился с моим предложением.' },
+  ] },
+  { id: 'topic11_017', topicId: 'topic11', german: 'bedauern', russian: 'сожалеть · bedauerte, hat bedauert', examples: [
+    { german: 'Ich bedaure, dass ich nicht kommen kann.', russian: 'Мне жаль, что я не могу прийти.' },
+    { german: 'Sie bedauerte ihre Entscheidung später sehr.', russian: 'Позже она очень пожалела о своём решении.' },
+  ] },
+  { id: 'topic11_018', topicId: 'topic11', german: 'behaupten', russian: 'утверждать · behauptete, hat behauptet', examples: [
+    { german: 'Er behauptet, er habe nichts gesehen.', russian: 'Он утверждает, что ничего не видел.' },
+    { german: 'Viele behaupten, dass das Klima sich verändert.', russian: 'Многие утверждают, что климат меняется.' },
+  ] },
+  { id: 'topic11_019', topicId: 'topic11', german: 'erwähnen', russian: 'упоминать · erwähnte, hat erwähnt', examples: [
+    { german: 'Ich möchte noch kurz erwähnen, dass wir wenig Zeit haben.', russian: 'Я хотел(а) бы ещё коротко упомянуть, что у нас мало времени.' },
+    { german: 'Sie hat deinen Namen mehrmals erwähnt.', russian: 'Она несколько раз упомянула твоё имя.' },
+  ] },
+  { id: 'topic11_020', topicId: 'topic11', german: 'vorschlagen', russian: 'предлагать · schlug vor, hat vorgeschlagen', examples: [
+    { german: 'Ich schlage vor, dass wir früher anfangen.', russian: 'Я предлагаю начать пораньше.' },
+    { german: 'Was schlägst du vor?', russian: 'Что ты предлагаешь?' },
+  ] },
+  { id: 'topic11_021', topicId: 'topic11', german: 'empfehlen', russian: 'рекомендовать · empfahl, hat empfohlen', examples: [
+    { german: 'Ich kann dir dieses Restaurant sehr empfehlen.', russian: 'Я могу тебе очень рекомендовать этот ресторан.' },
+    { german: 'Der Arzt hat mir viel Ruhe empfohlen.', russian: 'Врач посоветовал мне много отдыхать.' },
+  ] },
+  { id: 'topic11_022', topicId: 'topic11', german: 'überzeugen', russian: 'убеждать · überzeugte, hat überzeugt', examples: [
+    { german: 'Du musst mich erst einmal überzeugen.', russian: 'Тебе сначала нужно меня убедить.' },
+    { german: 'Sein Argument hat mich nicht überzeugt.', russian: 'Его аргумент меня не убедил.' },
+  ] },
+  { id: 'topic11_023', topicId: 'topic11', german: 'beeinflussen', russian: 'влиять · beeinflusste, hat beeinflusst', examples: [
+    { german: 'Das Wetter beeinflusst meine Stimmung stark.', russian: 'Погода сильно влияет на моё настроение.' },
+    { german: 'Er lässt sich leicht beeinflussen.', russian: 'Он легко поддаётся влиянию.' },
+  ] },
+  { id: 'topic11_024', topicId: 'topic11', german: 'erwarten', russian: 'ожидать · erwartete, hat erwartet', examples: [
+    { german: 'Wir erwarten dich um sechs Uhr.', russian: 'Мы ждём тебя в шесть часов.' },
+    { german: 'Ich hatte mehr von diesem Film erwartet.', russian: 'От этого фильма я ожидал(а) большего.' },
+  ] },
+  { id: 'topic11_025', topicId: 'topic11', german: 'befürchten', russian: 'опасаться · befürchtete, hat befürchtet', examples: [
+    { german: 'Ich befürchte, dass wir zu spät kommen.', russian: 'Боюсь, что мы опоздаем.' },
+    { german: 'Das Schlimmste ist zu befürchten.', russian: 'Стоит опасаться худшего.' },
+  ] },
+  { id: 'topic11_026', topicId: 'topic11', german: 'versprechen', russian: 'обещать · versprach, hat versprochen', examples: [
+    { german: 'Du hast mir versprochen, pünktlich zu sein.', russian: 'Ты обещал(а) мне прийти вовремя.' },
+    { german: 'Ich verspreche, es nicht zu vergessen.', russian: 'Обещаю не забыть.' },
+  ] },
+  { id: 'topic11_027', topicId: 'topic11', german: 'mitteilen', russian: 'сообщать · teilte mit, hat mitgeteilt', examples: [
+    { german: 'Bitte teilen Sie mir das Ergebnis mit.', russian: 'Пожалуйста, сообщите мне результат.' },
+    { german: 'Er hat uns seine Entscheidung schriftlich mitgeteilt.', russian: 'Он сообщил нам своё решение письменно.' },
+  ] },
+  { id: 'topic11_028', topicId: 'topic11', german: 'beschreiben', russian: 'описывать · beschrieb, hat beschrieben', examples: [
+    { german: 'Kannst du mir den Weg zum Bahnhof beschreiben?', russian: 'Можешь описать мне дорогу до вокзала?' },
+    { german: 'Sie hat den Unfall genau beschrieben.', russian: 'Она подробно описала аварию.' },
+  ] },
+  { id: 'topic11_029', topicId: 'topic11', german: 'erklären', russian: 'объяснять · erklärte, hat erklärt', examples: [
+    { german: 'Kannst du mir das noch einmal erklären?', russian: 'Можешь мне это ещё раз объяснить?' },
+    { german: 'Der Lehrer erklärt immer sehr deutlich.', russian: 'Учитель всегда очень понятно объясняет.' },
+  ] },
+  { id: 'topic11_030', topicId: 'topic11', german: 'bestätigen', russian: 'подтверждать · bestätigte, hat bestätigt', examples: [
+    { german: 'Bitte bestätigen Sie den Termin per E-Mail.', russian: 'Пожалуйста, подтвердите встречу по электронной почте.' },
+    { german: 'Ich kann die Buchung leider nicht bestätigen.', russian: 'К сожалению, я не могу подтвердить бронирование.' },
+  ] },
+  { id: 'topic11_031', topicId: 'topic11', german: 'widersprechen', russian: 'возражать · widersprach, hat widersprochen', examples: [
+    { german: 'Ich widerspreche dir ungern, aber das stimmt nicht.', russian: 'Я неохотно с тобой спорю, но это неправда.' },
+    { german: 'Sein Verhalten widerspricht seinen Worten.', russian: 'Его поведение противоречит его словам.' },
+  ] },
+  { id: 'topic11_032', topicId: 'topic11', german: 'begründen', russian: 'обосновывать · begründete, hat begründet', examples: [
+    { german: 'Begründen Sie bitte Ihre Entscheidung.', russian: 'Обоснуйте, пожалуйста, своё решение.' },
+    { german: 'Ich kann nicht genau begründen, warum ich das gemacht habe.', russian: 'Я не могу точно обосновать, почему я это сделал(а).' },
+  ] },
+  { id: 'topic11_033', topicId: 'topic11', german: 'bemerken', russian: 'замечать · bemerkte, hat bemerkt', examples: [
+    { german: 'Ich habe gar nicht bemerkt, dass du schon da bist.', russian: 'Я вообще не заметил(а), что ты уже здесь.' },
+    { german: 'Hast du den Unterschied bemerkt?', russian: 'Ты заметил(а) разницу?' },
+  ] },
+  { id: 'topic11_034', topicId: 'topic11', german: 'beobachten', russian: 'наблюдать · beobachtete, hat beobachtet', examples: [
+    { german: 'Ich beobachte gerne Menschen im Café.', russian: 'Я люблю наблюдать за людьми в кафе.' },
+    { german: 'Der Arzt beobachtet den Patienten seit einer Woche.', russian: 'Врач наблюдает за пациентом уже неделю.' },
+  ] },
+  { id: 'topic11_035', topicId: 'topic11', german: 'benötigen', russian: 'нуждаться · benötigte, hat benötigt', examples: [
+    { german: 'Ich benötige noch etwas Zeit.', russian: 'Мне нужно ещё немного времени.' },
+    { german: 'Für das Projekt benötigen wir neue Ideen.', russian: 'Для проекта нам нужны новые идеи.' },
+  ] },
+  { id: 'topic11_036', topicId: 'topic11', german: 'verwenden', russian: 'использовать, применять · verwendete, hat verwendet', examples: [
+    { german: 'Welche Zutaten verwendest du für den Kuchen?', russian: 'Какие ингредиенты ты используешь для торта?' },
+    { german: 'Dieses Wort wird nicht mehr oft verwendet.', russian: 'Это слово больше не часто используется.' },
+  ] },
+  { id: 'topic11_037', topicId: 'topic11', german: 'herstellen', russian: 'производить, изготавливать · stellte her, hat hergestellt', examples: [
+    { german: 'Diese Firma stellt Möbel aus Holz her.', russian: 'Эта фирма производит мебель из дерева.' },
+    { german: 'Das Produkt wird in Deutschland hergestellt.', russian: 'Продукт производится в Германии.' },
+  ] },
+  { id: 'topic11_038', topicId: 'topic11', german: 'entwickeln', russian: 'развивать, разрабатывать · entwickelte, hat entwickelt', examples: [
+    { german: 'Sie entwickeln gerade eine neue App.', russian: 'Они сейчас разрабатывают новое приложение.' },
+    { german: 'Das Kind entwickelt sich sehr schnell.', russian: 'Ребёнок очень быстро развивается.' },
+  ] },
+  { id: 'topic11_039', topicId: 'topic11', german: 'verbessern', russian: 'улучшать · verbesserte, hat verbessert', examples: [
+    { german: 'Ich möchte mein Deutsch verbessern.', russian: 'Я хочу улучшить свой немецкий.' },
+    { german: 'Durch viel Übung hat sich alles verbessert.', russian: 'Благодаря практике всё улучшилось.' },
+  ] },
+  { id: 'topic11_040', topicId: 'topic11', german: 'verändern', russian: 'изменять · veränderte, hat verändert', examples: [
+    { german: 'Diese Reise hat mein Leben stark verändert.', russian: 'Это путешествие сильно изменило мою жизнь.' },
+    { german: 'In letzter Zeit hat sich viel verändert.', russian: 'В последнее время многое изменилось.' },
+  ] },
+  { id: 'topic11_041', topicId: 'topic11', german: 'erhöhen', russian: 'повышать · erhöhte, hat erhöht', examples: [
+    { german: 'Die Miete wird um zehn Prozent erhöht.', russian: 'Аренду повысят на десять процентов.' },
+    { german: 'Wir müssen unsere Produktivität erhöhen.', russian: 'Нам нужно повысить производительность.' },
+  ] },
+  { id: 'topic11_042', topicId: 'topic11', german: 'verringern', russian: 'уменьшать, сокращать · verringerte, hat verringert', examples: [
+    { german: 'Die Firma will die Kosten verringern.', russian: 'Фирма хочет сократить расходы.' },
+    { german: 'Die Gefahr hat sich deutlich verringert.', russian: 'Опасность значительно уменьшилась.' },
+  ] },
+  { id: 'topic11_043', topicId: 'topic11', german: 'verursachen', russian: 'вызывать, быть причиной · verursachte, hat verursacht', examples: [
+    { german: 'Der Sturm hat große Schäden verursacht.', russian: 'Буря нанесла большой ущерб.' },
+    { german: 'Stress verursacht oft Kopfschmerzen.', russian: 'Стресс часто вызывает головную боль.' },
+  ] },
+  { id: 'topic11_044', topicId: 'topic11', german: 'erhalten', russian: 'получать; сохранять · erhielt, hat erhalten', examples: [
+    { german: 'Ich habe deinen Brief gestern erhalten.', russian: 'Я получил(а) твоё письмо вчера.' },
+    { german: 'Wir möchten die alten Gebäude erhalten.', russian: 'Мы хотим сохранить старые здания.' },
+  ] },
+  { id: 'topic11_045', topicId: 'topic11', german: 'erreichen', russian: 'достигать · erreichte, hat erreicht', examples: [
+    { german: 'Wir haben unser Ziel endlich erreicht.', russian: 'Мы наконец достигли нашей цели.' },
+    { german: 'Du kannst mich unter dieser Nummer erreichen.', russian: 'По этому номеру ты можешь со мной связаться.' },
+  ] },
+  { id: 'topic11_046', topicId: 'topic11', german: 'gelingen', russian: 'удаваться · gelang, ist gelungen', examples: [
+    { german: 'Mir ist der Kuchen gut gelungen.', russian: 'Торт у меня хорошо получился.' },
+    { german: 'Es ist ihm gelungen, die Prüfung zu bestehen.', russian: 'Ему удалось сдать экзамен.' },
+  ] },
+  { id: 'topic11_047', topicId: 'topic11', german: 'aufgeben', russian: 'бросать, сдаваться · gab auf, hat aufgegeben', examples: [
+    { german: 'Gib nicht so schnell auf!', russian: 'Не сдавайся так быстро!' },
+    { german: 'Ich habe das Rauchen aufgegeben.', russian: 'Я бросил(а) курить.' },
+  ] },
+  { id: 'topic11_048', topicId: 'topic11', german: 'einrichten', russian: 'обустраивать, устанавливать · richtete ein, hat eingerichtet', examples: [
+    { german: 'Wir haben unsere neue Wohnung schön eingerichtet.', russian: 'Мы красиво обустроили нашу новую квартиру.' },
+    { german: 'Kannst du das WLAN für mich einrichten?', russian: 'Можешь настроить мне Wi-Fi?' },
+  ] },
+  { id: 'topic11_049', topicId: 'topic11', german: 'anbieten', russian: 'предлагать · bot an, hat angeboten', examples: [
+    { german: 'Darf ich Ihnen einen Kaffee anbieten?', russian: 'Можно предложить вам кофе?' },
+    { german: 'Die Firma bietet viele interessante Stellen an.', russian: 'Фирма предлагает много интересных вакансий.' },
+  ] },
+  { id: 'topic11_050', topicId: 'topic11', german: 'ausprobieren', russian: 'пробовать, испытывать · probierte aus, hat ausprobiert', examples: [
+    { german: 'Ich möchte dieses Rezept einmal ausprobieren.', russian: 'Я хочу как-нибудь попробовать этот рецепт.' },
+    { german: 'Hast du die neue App schon ausprobiert?', russian: 'Ты уже пробовал(а) новое приложение?' },
+  ] },
+  { id: 'topic11_051', topicId: 'topic11', german: 'sich bewerben um + Akk', russian: 'подавать заявку на (работу) · bewarb, hat beworben', examples: [
+    { german: 'Ich bewerbe mich um einen Studienplatz in München.', russian: 'Я подаю заявку на учёбу в Мюнхене.' },
+    { german: 'Sie hat sich um die Stelle beworben.', russian: 'Она подала заявку на эту должность.' },
+  ] },
+  { id: 'topic11_052', topicId: 'topic11', german: 'sich beschweren über + Akk', russian: 'жаловаться · beschwerte, hat beschwert', examples: [
+    { german: 'Der Kunde beschwert sich über den Service.', russian: 'Клиент жалуется на сервис.' },
+    { german: 'Ich möchte mich nicht beschweren, aber das Essen war kalt.', russian: 'Не хочу жаловаться, но еда была холодной.' },
+  ] },
+  { id: 'topic11_053', topicId: 'topic11', german: 'sich erkundigen nach + Dat', russian: 'справляться, узнавать · erkundigte, hat erkundigt', examples: [
+    { german: 'Ich habe mich nach dem Preis erkundigt.', russian: 'Я справился(лась) о цене.' },
+    { german: 'Er hat sich nach deiner Gesundheit erkundigt.', russian: 'Он справлялся о твоём здоровье.' },
+  ] },
+  { id: 'topic11_054', topicId: 'topic11', german: 'sich kümmern um + Akk', russian: 'заботиться о · kümmerte, hat gekümmert', examples: [
+    { german: 'Ich kümmere mich um die Organisation der Feier.', russian: 'Я занимаюсь организацией праздника.' },
+    { german: 'Wer kümmert sich heute um den Hund?', russian: 'Кто сегодня заботится о собаке?' },
+  ] },
+  { id: 'topic11_055', topicId: 'topic11', german: 'sich ärgern über + Akk', russian: 'злиться на · ärgerte, hat geärgert', examples: [
+    { german: 'Ich ärgere mich über den Stau.', russian: 'Я злюсь из-за пробки.' },
+    { german: 'Über solche Fehler ärgere ich mich immer.', russian: 'Из-за таких ошибок я всегда злюсь.' },
+  ] },
+  { id: 'topic11_056', topicId: 'topic11', german: 'sich erinnern an + Akk', russian: 'помнить, вспоминать · erinnerte, hat erinnert', examples: [
+    { german: 'Erinnerst du dich noch an unseren ersten Urlaub?', russian: 'Ты ещё помнишь наш первый отпуск?' },
+    { german: 'Ich kann mich an seinen Namen nicht erinnern.', russian: 'Я не могу вспомнить его имя.' },
+  ] },
+  { id: 'topic11_057', topicId: 'topic11', german: 'sich entschuldigen für + Akk', russian: 'извиняться за · entschuldigte, hat entschuldigt', examples: [
+    { german: 'Ich möchte mich für die Verspätung entschuldigen.', russian: 'Я хотел(а) бы извиниться за опоздание.' },
+    { german: 'Er hat sich bei mir für sein Verhalten entschuldigt.', russian: 'Он извинился передо мной за своё поведение.' },
+  ] },
+  { id: 'topic11_058', topicId: 'topic11', german: 'sich beeilen', russian: 'торопиться · beeilte, hat beeilt', examples: [
+    { german: 'Beeil dich, sonst verpassen wir den Zug!', russian: 'Поторопись, а то мы опоздаем на поезд!' },
+    { german: 'Ich habe mich beeilt, aber es hat nicht gereicht.', russian: 'Я торопился(лась), но этого не хватило.' },
+  ] },
+  { id: 'topic11_059', topicId: 'topic11', german: 'sich verlaufen', russian: 'заблудиться (пешком) · verlief, hat verlaufen', examples: [
+    { german: 'In der Altstadt habe ich mich völlig verlaufen.', russian: 'В старом городе я совсем заблудился/лась.' },
+    { german: 'Man kann sich in diesem Wald leicht verlaufen.', russian: 'В этом лесу легко заблудиться.' },
+  ] },
+  { id: 'topic11_060', topicId: 'topic11', german: 'sich unterhalten', russian: 'беседовать; развлекаться · unterhielt, hat unterhalten', examples: [
+    { german: 'Wir haben uns den ganzen Abend gut unterhalten.', russian: 'Мы хорошо провели весь вечер в беседе.' },
+    { german: 'Ich würde mich gern mal wieder mit dir unterhalten.', russian: 'Я бы с радостью снова с тобой пообщался(лась).' },
+  ] },
+  { id: 'topic11_061', topicId: 'topic11', german: 'sich verabreden', russian: 'договариваться о встрече · verabredete, hat verabredet', examples: [
+    { german: 'Wir haben uns für Samstag verabredet.', russian: 'Мы договорились встретиться в субботу.' },
+    { german: 'Sollen wir uns zum Kaffee verabreden?', russian: 'Давай договоримся выпить кофе?' },
+  ] },
+  { id: 'topic11_062', topicId: 'topic11', german: 'sich entschließen', russian: 'решаться · entschloss, hat entschlossen', examples: [
+    { german: 'Ich habe mich entschlossen, ein Praktikum zu machen.', russian: 'Я решил(а) пройти стажировку.' },
+    { german: 'Nach langem Überlegen entschloss er sich zu gehen.', russian: 'После долгих раздумий он решил уйти.' },
+  ] },
+  { id: 'topic11_063', topicId: 'topic11', german: 'sich interessieren für + Akk', russian: 'интересоваться · interessierte, hat interessiert', examples: [
+    { german: 'Ich interessiere mich sehr für Geschichte.', russian: 'Я очень интересуюсь историей.' },
+    { german: 'Interessierst du dich für Politik?', russian: 'Ты интересуешься политикой?' },
+  ] },
+  { id: 'topic11_064', topicId: 'topic11', german: 'sich verlassen auf + Akk', russian: 'полагаться на · verließ, hat verlassen', examples: [
+    { german: 'Du kannst dich auf mich verlassen.', russian: 'Ты можешь на меня положиться.' },
+    { german: 'Ich verlasse mich auf dein Versprechen.', russian: 'Я полагаюсь на твоё обещание.' },
+  ] },
+  { id: 'topic11_065', topicId: 'topic11', german: 'sich gewöhnen an + Akk', russian: 'привыкать к · gewöhnte, hat gewöhnt', examples: [
+    { german: 'An das Wetter hier habe ich mich noch nicht gewöhnt.', russian: 'Я ещё не привык(ла) к здешней погоде.' },
+    { german: 'Man gewöhnt sich schnell an neue Routinen.', russian: 'К новым привычкам быстро привыкаешь.' },
+  ] },
+  { id: 'topic11_066', topicId: 'topic11', german: 'sich vorstellen', russian: 'представлять (себе / себя) · stellte vor, hat vorgestellt', examples: [
+    { german: 'Darf ich mich kurz vorstellen?', russian: 'Можно мне коротко представиться?' },
+    { german: 'Ich kann mir nicht vorstellen, dass das stimmt.', russian: 'Мне сложно представить, что это правда.' },
+  ] },
+  { id: 'topic11_067', topicId: 'topic11', german: 'auffallen', russian: 'бросаться в глаза · fiel auf, ist aufgefallen', examples: [
+    { german: 'Ist dir etwas Ungewöhnliches aufgefallen?', russian: 'Тебе что-нибудь необычное бросилось в глаза?' },
+    { german: 'Er fällt mit seiner Kleidung immer auf.', russian: 'Он всегда выделяется своей одеждой.' },
+  ] },
+  { id: 'topic11_068', topicId: 'topic11', german: 'feststellen', russian: 'устанавливать, констатировать · stellte fest, hat festgestellt', examples: [
+    { german: 'Ich habe festgestellt, dass mein Geldbeutel weg ist.', russian: 'Я обнаружил(а), что мой кошелёк пропал.' },
+    { german: 'Der Arzt stellte eine leichte Erkältung fest.', russian: 'Врач констатировал лёгкую простуду.' },
+  ] },
+  { id: 'topic11_069', topicId: 'topic11', german: 'vorkommen', russian: 'случаться, встречаться · kam vor, ist vorgekommen', examples: [
+    { german: 'So etwas ist mir noch nie vorgekommen.', russian: 'Такого со мной ещё никогда не случалось.' },
+    { german: 'Solche Probleme kommen leider oft vor.', russian: 'Такие проблемы, к сожалению, часто случаются.' },
+  ] },
+  { id: 'topic11_070', topicId: 'topic11', german: 'stattfinden', russian: 'состояться, проходить · fand statt, hat stattgefunden', examples: [
+    { german: 'Die Hochzeit findet im Juni statt.', russian: 'Свадьба состоится в июне.' },
+    { german: 'Das Konzert hat gestern stattgefunden.', russian: 'Концерт состоялся вчера.' },
+  ] },
+  { id: 'topic11_071', topicId: 'topic11', german: 'teilnehmen an + Dat', russian: 'принимать участие · nahm teil, hat teilgenommen', examples: [
+    { german: 'Ich nehme an einem Sprachkurs teil.', russian: 'Я хожу на языковые курсы.' },
+    { german: 'Viele Schüler haben an dem Projekt teilgenommen.', russian: 'Много учеников приняли участие в проекте.' },
+  ] },
+  { id: 'topic11_072', topicId: 'topic11', german: 'beitragen zu + Dat', russian: 'вносить вклад, способствовать · trug bei, hat beigetragen', examples: [
+    { german: 'Jeder kann zum Umweltschutz beitragen.', russian: 'Каждый может внести вклад в защиту окружающей среды.' },
+    { german: 'Seine Hilfe hat viel zum Erfolg beigetragen.', russian: 'Его помощь сильно способствовала успеху.' },
+  ] },
+  { id: 'topic11_073', topicId: 'topic11', german: 'verlangen', russian: 'требовать · verlangte, hat verlangt', examples: [
+    { german: 'Der Kunde verlangt sein Geld zurück.', russian: 'Клиент требует свои деньги обратно.' },
+    { german: 'Das verlangt viel Geduld.', russian: 'Это требует много терпения.' },
+  ] },
+  { id: 'topic11_074', topicId: 'topic11', german: 'fordern', russian: 'требовать · forderte, hat gefordert', examples: [
+    { german: 'Die Arbeiter fordern höhere Löhne.', russian: 'Рабочие требуют повышения зарплаты.' },
+    { german: 'Sie forderte eine klare Erklärung.', russian: 'Она потребовала чёткого объяснения.' },
+  ] },
+  { id: 'topic11_075', topicId: 'topic11', german: 'fördern', russian: 'поддерживать, спонсировать · förderte, hat gefördert', examples: [
+    { german: 'Der Staat fördert junge Familien.', russian: 'Государство поддерживает молодые семьи.' },
+    { german: 'Das Programm fördert die Kreativität der Kinder.', russian: 'Программа развивает креативность детей.' },
+  ] },
+  { id: 'topic11_076', topicId: 'topic11', german: 'überlegen', russian: 'размышлять, обдумывать · überlegte, hat überlegt', examples: [
+    { german: 'Ich muss noch kurz überlegen.', russian: 'Мне нужно ещё немного подумать.' },
+    { german: 'Überleg dir das gut!', russian: 'Хорошо подумай об этом!' },
+  ] },
+  { id: 'topic11_077', topicId: 'topic11', german: 'überreden', russian: 'уговаривать · überredete, hat überredet', examples: [
+    { german: 'Sie hat mich überredet mitzukommen.', russian: 'Она уговорила меня пойти с ней.' },
+    { german: 'Lass dich nicht so leicht überreden.', russian: 'Не давай себя так легко уговаривать.' },
+  ] },
+  { id: 'topic11_078', topicId: 'topic11', german: 'übernehmen', russian: 'принимать на себя · übernahm, hat übernommen', examples: [
+    { german: 'Ich übernehme gern diese Aufgabe.', russian: 'Я с удовольствием возьму на себя эту задачу.' },
+    { german: 'Er hat die Firma von seinem Vater übernommen.', russian: 'Он принял фирму от отца.' },
+  ] },
+  { id: 'topic11_079', topicId: 'topic11', german: 'überweisen', russian: 'переводить (деньги) · überwies, hat überwiesen', examples: [
+    { german: 'Ich überweise dir das Geld morgen.', russian: 'Я переведу тебе деньги завтра.' },
+    { german: 'Die Miete muss bis zum Dritten überwiesen werden.', russian: 'Аренду нужно перевести до третьего числа.' },
+  ] },
+  { id: 'topic11_080', topicId: 'topic11', german: 'zurückgeben', russian: 'возвращать · gab zurück, hat zurückgegeben', examples: [
+    { german: 'Gib mir bitte das Buch zurück.', russian: 'Верни мне, пожалуйста, книгу.' },
+    { german: 'Ich habe die Jacke im Geschäft zurückgegeben.', russian: 'Я вернул(а) куртку в магазин.' },
+  ] },
+  { id: 'topic11_081', topicId: 'topic11', german: 'leihen', russian: 'одалживать, брать взаймы · lieh, hat geliehen', examples: [
+    { german: 'Kannst du mir zehn Euro leihen?', russian: 'Можешь одолжить мне десять евро?' },
+    { german: 'Ich habe mir ein Fahrrad geliehen.', russian: 'Я одолжил(а) себе велосипед.' },
+  ] },
+  { id: 'topic11_082', topicId: 'topic11', german: 'sparen', russian: 'экономить, копить · sparte, hat gespart', examples: [
+    { german: 'Wir sparen für eine Reise nach Italien.', russian: 'Мы копим на поездку в Италию.' },
+    { german: 'So spart man viel Zeit.', russian: 'Так экономится много времени.' },
+  ] },
+  { id: 'topic11_083', topicId: 'topic11', german: 'verdienen', russian: 'зарабатывать · verdiente, hat verdient', examples: [
+    { german: 'Er verdient gut in seinem neuen Job.', russian: 'Он хорошо зарабатывает на новой работе.' },
+    { german: 'Sie verdient ihr Geld als Lehrerin.', russian: 'Она зарабатывает тем, что работает учительницей.' },
+  ] },
+  { id: 'topic11_084', topicId: 'topic11', german: 'ausgeben', russian: 'тратить · gab aus, hat ausgegeben', examples: [
+    { german: 'Ich habe zu viel Geld für Kleidung ausgegeben.', russian: 'Я потратил(а) слишком много на одежду.' },
+    { german: 'Wie viel gibst du im Monat aus?', russian: 'Сколько ты тратишь в месяц?' },
+  ] },
+  { id: 'topic11_085', topicId: 'topic11', german: 'kündigen', russian: 'увольнять(ся), расторгать · kündigte, hat gekündigt', examples: [
+    { german: 'Ich habe gestern meinen Job gekündigt.', russian: 'Я вчера уволился(лась) с работы.' },
+    { german: 'Der Vermieter hat mir die Wohnung gekündigt.', russian: 'Арендодатель расторг со мной договор аренды.' },
+  ] },
+  { id: 'topic11_086', topicId: 'topic11', german: 'einstellen', russian: 'нанимать; настраивать; прекращать · stellte ein, hat eingestellt', examples: [
+    { german: 'Die Firma hat zehn neue Mitarbeiter eingestellt.', russian: 'Фирма наняла десять новых сотрудников.' },
+    { german: 'Ich muss die Heizung höher einstellen.', russian: 'Мне нужно сделать отопление теплее.' },
+  ] },
+  { id: 'topic11_087', topicId: 'topic11', german: 'wiederholen', russian: 'повторять · wiederholte, hat wiederholt', examples: [
+    { german: 'Könnten Sie das bitte wiederholen?', russian: 'Не могли бы вы повторить?' },
+    { german: 'Ich wiederhole den Stoff vor der Prüfung.', russian: 'Я повторяю материал перед экзаменом.' },
+  ] },
+  { id: 'topic11_088', topicId: 'topic11', german: 'sich konzentrieren auf + Akk', russian: 'сосредоточиться на · konzentrierte, hat konzentriert', examples: [
+    { german: 'Ich kann mich heute nicht auf die Arbeit konzentrieren.', russian: 'Я сегодня не могу сосредоточиться на работе.' },
+    { german: 'Konzentrier dich auf das Wichtigste!', russian: 'Сосредоточься на самом важном!' },
+  ] },
+  { id: 'topic11_089', topicId: 'topic11', german: 'gehören zu + Dat', russian: 'принадлежать, относиться · gehörte, hat gehört', examples: [
+    { german: 'Dieses Buch gehört zu meinen Lieblingsbüchern.', russian: 'Эта книга одна из моих любимых.' },
+    { german: 'Er gehört zu den besten Spielern der Mannschaft.', russian: 'Он один из лучших игроков команды.' },
+  ] },
+  { id: 'topic11_090', topicId: 'topic11', german: 'bestehen aus + Dat', russian: 'состоять из · bestand, hat bestanden', examples: [
+    { german: 'Das Team besteht aus fünf Personen.', russian: 'Команда состоит из пяти человек.' },
+    { german: 'Das Gericht besteht aus Fleisch und Gemüse.', russian: 'Блюдо состоит из мяса и овощей.' },
+  ] },
+  { id: 'topic11_091', topicId: 'topic11', german: 'enthalten', russian: 'содержать · enthielt, hat enthalten', examples: [
+    { german: 'Dieses Getränk enthält viel Zucker.', russian: 'Этот напиток содержит много сахара.' },
+    { german: 'Die Packung enthält zehn Stück.', russian: 'В упаковке десять штук.' },
+  ] },
+  { id: 'topic11_092', topicId: 'topic11', german: 'vergleichen', russian: 'сравнивать · verglich, hat verglichen', examples: [
+    { german: 'Vergleiche die Preise, bevor du kaufst.', russian: 'Сравни цены, прежде чем покупать.' },
+    { german: 'Man kann die beiden Filme nicht vergleichen.', russian: 'Эти два фильма нельзя сравнивать.' },
+  ] },
+  { id: 'topic11_093', topicId: 'topic11', german: 'beschließen', russian: 'решать, постановлять · beschloss, hat beschlossen', examples: [
+    { german: 'Wir haben beschlossen, in eine andere Stadt umzuziehen.', russian: 'Мы решили переехать в другой город.' },
+    { german: 'Das Parlament hat das neue Gesetz beschlossen.', russian: 'Парламент принял новый закон.' },
+  ] },
+  { id: 'topic11_094', topicId: 'topic11', german: 'verbringen', russian: 'проводить (время) · verbrachte, hat verbracht', examples: [
+    { german: 'Ich verbringe den Sommer am Meer.', russian: 'Я проведу лето у моря.' },
+    { german: 'Wir haben einen schönen Abend zusammen verbracht.', russian: 'Мы провели прекрасный вечер вместе.' },
+  ] },
+  { id: 'topic11_095', topicId: 'topic11', german: 'sich weigern', russian: 'отказываться · weigerte, hat geweigert', examples: [
+    { german: 'Er weigert sich, den Brief zu unterschreiben.', russian: 'Он отказывается подписывать письмо.' },
+    { german: 'Das Kind weigerte sich, ins Bett zu gehen.', russian: 'Ребёнок отказался идти спать.' },
+  ] },
+  { id: 'topic11_096', topicId: 'topic11', german: 'behandeln', russian: 'обращаться с; лечить · behandelte, hat behandelt', examples: [
+    { german: 'Der Arzt behandelt mich seit Jahren.', russian: 'Врач лечит меня уже много лет.' },
+    { german: 'Man sollte alle Menschen gleich behandeln.', russian: 'Со всеми людьми нужно обращаться одинаково.' },
+  ] },
+  { id: 'topic11_097', topicId: 'topic11', german: 'sich verhalten', russian: 'вести себя · verhielt, hat verhalten', examples: [
+    { german: 'Wie soll ich mich in dieser Situation verhalten?', russian: 'Как мне вести себя в этой ситуации?' },
+    { german: 'Er hat sich in der Prüfung sehr ruhig verhalten.', russian: 'На экзамене он вёл себя очень спокойно.' },
+  ] },
+  { id: 'topic11_098', topicId: 'topic11', german: 'zweifeln an + Dat', russian: 'сомневаться в · zweifelte, hat gezweifelt', examples: [
+    { german: 'Ich zweifle an seiner Ehrlichkeit.', russian: 'Я сомневаюсь в его честности.' },
+    { german: 'Niemand zweifelt an deinem Können.', russian: 'Никто не сомневается в твоих способностях.' },
+  ] },
+  { id: 'topic11_099', topicId: 'topic11', german: 'hinweisen auf + Akk', russian: 'указывать на · wies hin, hat hingewiesen', examples: [
+    { german: 'Ich möchte darauf hinweisen, dass wir wenig Zeit haben.', russian: 'Я хотел(а) бы обратить внимание, что у нас мало времени.' },
+    { german: 'Das Schild weist auf die Gefahr hin.', russian: 'Знак указывает на опасность.' },
+  ] },
+  { id: 'topic11_100', topicId: 'topic11', german: 'sich lohnen', russian: 'стоить того, окупаться · lohnte, hat gelohnt', examples: [
+    { german: 'Der Film lohnt sich wirklich.', russian: 'Фильм действительно стоит посмотреть.' },
+    { german: 'Es lohnt sich nicht, darüber zu streiten.', russian: 'Не стоит спорить об этом.' },
+  ] },
+
+  // === Topic 12: Важные прилагательные B1 (100 шт.) ===
+  { id: 'topic12_001', topicId: 'topic12', german: 'zuverlässig', russian: 'надёжный', examples: [
+    { german: 'Mein Kollege ist ein sehr zuverlässiger Mensch.', russian: 'Мой коллега — очень надёжный человек.' },
+    { german: 'Dieses Auto ist zuverlässig und sparsam.', russian: 'Эта машина надёжна и экономична.' },
+  ] },
+  { id: 'topic12_002', topicId: 'topic12', german: 'ehrgeizig', russian: 'амбициозный, честолюбивый', examples: [
+    { german: 'Sie ist eine ehrgeizige Studentin.', russian: 'Она амбициозная студентка.' },
+    { german: 'Er hat sehr ehrgeizige Pläne für die Zukunft.', russian: 'У него очень амбициозные планы на будущее.' },
+  ] },
+  { id: 'topic12_003', topicId: 'topic12', german: 'geduldig', russian: 'терпеливый', examples: [
+    { german: 'Als Lehrer muss man geduldig sein.', russian: 'Будучи учителем, нужно быть терпеливым.' },
+    { german: 'Sie erklärt alles sehr geduldig.', russian: 'Она всё очень терпеливо объясняет.' },
+  ] },
+  { id: 'topic12_004', topicId: 'topic12', german: 'ungeduldig', russian: 'нетерпеливый', examples: [
+    { german: 'Ich werde ungeduldig, wenn ich lange warten muss.', russian: 'Я становлюсь нетерпеливым(ой), когда долго жду.' },
+    { german: 'Sei nicht so ungeduldig!', russian: 'Не будь таким нетерпеливым!' },
+  ] },
+  { id: 'topic12_005', topicId: 'topic12', german: 'großzügig', russian: 'щедрый, великодушный', examples: [
+    { german: 'Mein Onkel ist immer sehr großzügig.', russian: 'Мой дядя всегда очень щедрый.' },
+    { german: 'Das war ein großzügiges Geschenk.', russian: 'Это был щедрый подарок.' },
+  ] },
+  { id: 'topic12_006', topicId: 'topic12', german: 'sparsam', russian: 'экономный', examples: [
+    { german: 'Meine Eltern sind sehr sparsam.', russian: 'Мои родители очень экономные.' },
+    { german: 'Diese Lampe ist besonders sparsam im Verbrauch.', russian: 'Эта лампа особенно экономична в потреблении.' },
+  ] },
+  { id: 'topic12_007', topicId: 'topic12', german: 'neugierig', russian: 'любопытный', examples: [
+    { german: 'Kinder sind von Natur aus neugierig.', russian: 'Дети от природы любопытные.' },
+    { german: 'Ich bin neugierig, wie die Geschichte endet.', russian: 'Мне интересно, чем закончится история.' },
+  ] },
+  { id: 'topic12_008', topicId: 'topic12', german: 'aufmerksam', russian: 'внимательный', examples: [
+    { german: 'Sei aufmerksam im Straßenverkehr!', russian: 'Будь внимательным в дорожном движении!' },
+    { german: 'Er ist ein sehr aufmerksamer Zuhörer.', russian: 'Он очень внимательный слушатель.' },
+  ] },
+  { id: 'topic12_009', topicId: 'topic12', german: 'rücksichtsvoll', russian: 'тактичный, считающийся с другими', examples: [
+    { german: 'Ein rücksichtsvoller Nachbar macht abends keinen Lärm.', russian: 'Тактичный сосед не шумит вечером.' },
+    { german: 'Sie verhält sich immer rücksichtsvoll.', russian: 'Она всегда ведёт себя с уважением к другим.' },
+  ] },
+  { id: 'topic12_010', topicId: 'topic12', german: 'rücksichtslos', russian: 'бесцеремонный, без оглядки на других', examples: [
+    { german: 'Er fährt rücksichtslos durch die Stadt.', russian: 'Он ездит по городу без оглядки на других.' },
+    { german: 'Ein rücksichtsloser Chef verliert schnell Mitarbeiter.', russian: 'Бесцеремонный начальник быстро теряет сотрудников.' },
+  ] },
+  { id: 'topic12_011', topicId: 'topic12', german: 'hilfsbereit', russian: 'готовый помочь, отзывчивый', examples: [
+    { german: 'Meine Nachbarin ist sehr hilfsbereit.', russian: 'Моя соседка очень отзывчивая.' },
+    { german: 'Er ist immer hilfsbereit, wenn jemand Unterstützung braucht.', russian: 'Он всегда готов помочь, когда кому-то нужна поддержка.' },
+  ] },
+  { id: 'topic12_012', topicId: 'topic12', german: 'höflich', russian: 'вежливый', examples: [
+    { german: 'Bitte sei höflich zu den Gästen.', russian: 'Пожалуйста, будь вежлив(а) с гостями.' },
+    { german: 'Er hat sehr höflich nachgefragt.', russian: 'Он очень вежливо переспросил.' },
+  ] },
+  { id: 'topic12_013', topicId: 'topic12', german: 'unhöflich', russian: 'невежливый', examples: [
+    { german: 'Es ist unhöflich, beim Essen aufs Handy zu schauen.', russian: 'Невежливо смотреть в телефон во время еды.' },
+    { german: 'Sein Ton war ziemlich unhöflich.', russian: 'Его тон был довольно невежливым.' },
+  ] },
+  { id: 'topic12_014', topicId: 'topic12', german: 'freundlich', russian: 'дружелюбный, приветливый', examples: [
+    { german: 'Die Verkäuferin war sehr freundlich.', russian: 'Продавщица была очень дружелюбной.' },
+    { german: 'Er hat uns freundlich begrüßt.', russian: 'Он приветливо нас встретил.' },
+  ] },
+  { id: 'topic12_015', topicId: 'topic12', german: 'ehrlich', russian: 'честный', examples: [
+    { german: 'Sag mir bitte ehrlich, was du denkst.', russian: 'Пожалуйста, скажи мне честно, что ты думаешь.' },
+    { german: 'Ehrlich gesagt, habe ich keine Lust.', russian: 'Честно говоря, мне неохота.' },
+  ] },
+  { id: 'topic12_016', topicId: 'topic12', german: 'selbstbewusst', russian: 'уверенный в себе', examples: [
+    { german: 'Sie spricht selbstbewusst vor Publikum.', russian: 'Она уверенно говорит перед публикой.' },
+    { german: 'Ein selbstbewusster Auftritt hilft im Vorstellungsgespräch.', russian: 'Уверенное выступление помогает на собеседовании.' },
+  ] },
+  { id: 'topic12_017', topicId: 'topic12', german: 'verantwortungsvoll', russian: 'ответственный', examples: [
+    { german: 'Er ist ein verantwortungsvoller Mitarbeiter.', russian: 'Он ответственный сотрудник.' },
+    { german: 'Das ist eine verantwortungsvolle Aufgabe.', russian: 'Это ответственная задача.' },
+  ] },
+  { id: 'topic12_018', topicId: 'topic12', german: 'kreativ', russian: 'креативный, творческий', examples: [
+    { german: 'Sie hat eine sehr kreative Idee.', russian: 'У неё очень креативная идея.' },
+    { german: 'In meinem Job muss ich oft kreativ sein.', russian: 'В своей работе я часто должен(на) быть креативным.' },
+  ] },
+  { id: 'topic12_019', topicId: 'topic12', german: 'flexibel', russian: 'гибкий', examples: [
+    { german: 'Ich habe flexible Arbeitszeiten.', russian: 'У меня гибкий график работы.' },
+    { german: 'Sei bitte flexibel mit dem Termin.', russian: 'Будь, пожалуйста, гибок(кой) с датой встречи.' },
+  ] },
+  { id: 'topic12_020', topicId: 'topic12', german: 'pünktlich', russian: 'пунктуальный, вовремя', examples: [
+    { german: 'Er ist immer pünktlich.', russian: 'Он всегда пунктуален.' },
+    { german: 'Bitte seien Sie pünktlich zum Treffen.', russian: 'Пожалуйста, придите вовремя на встречу.' },
+  ] },
+  { id: 'topic12_021', topicId: 'topic12', german: 'fleißig', russian: 'трудолюбивый, старательный', examples: [
+    { german: 'Sie ist eine fleißige Schülerin.', russian: 'Она старательная ученица.' },
+    { german: 'Wenn du fleißig lernst, schaffst du die Prüfung.', russian: 'Если ты будешь усердно учиться, ты сдашь экзамен.' },
+  ] },
+  { id: 'topic12_022', topicId: 'topic12', german: 'faul', russian: 'ленивый', examples: [
+    { german: 'Am Sonntag bin ich einfach faul.', russian: 'По воскресеньям я просто ленюсь.' },
+    { german: 'Sei nicht so faul, mach die Hausaufgaben!', russian: 'Не ленись, сделай домашку!' },
+  ] },
+  { id: 'topic12_023', topicId: 'topic12', german: 'mutig', russian: 'смелый', examples: [
+    { german: 'Sie war mutig genug, die Wahrheit zu sagen.', russian: 'Она была достаточно смелой, чтобы сказать правду.' },
+    { german: 'Das war eine mutige Entscheidung.', russian: 'Это было смелое решение.' },
+  ] },
+  { id: 'topic12_024', topicId: 'topic12', german: 'ängstlich', russian: 'боязливый, пугливый', examples: [
+    { german: 'Mein Hund ist vor fremden Menschen ängstlich.', russian: 'Моя собака пугается незнакомых людей.' },
+    { german: 'Sie ist ein eher ängstlicher Typ.', russian: 'Она скорее боязливый человек.' },
+  ] },
+  { id: 'topic12_025', topicId: 'topic12', german: 'stolz', russian: 'гордый', examples: [
+    { german: 'Ich bin stolz auf meine Tochter.', russian: 'Я горжусь своей дочерью.' },
+    { german: 'Er ist stolz auf seine Arbeit.', russian: 'Он гордится своей работой.' },
+  ] },
+  { id: 'topic12_026', topicId: 'topic12', german: 'bescheiden', russian: 'скромный', examples: [
+    { german: 'Er ist ein bescheidener Mensch.', russian: 'Он скромный человек.' },
+    { german: 'Bleib bescheiden, auch wenn du Erfolg hast.', russian: 'Оставайся скромным(ой), даже если у тебя есть успех.' },
+  ] },
+  { id: 'topic12_027', topicId: 'topic12', german: 'zufrieden', russian: 'довольный', examples: [
+    { german: 'Ich bin mit dem Ergebnis sehr zufrieden.', russian: 'Я очень доволен(на) результатом.' },
+    { german: 'Sie wirkt heute richtig zufrieden.', russian: 'Она сегодня выглядит по-настоящему довольной.' },
+  ] },
+  { id: 'topic12_028', topicId: 'topic12', german: 'unzufrieden', russian: 'недовольный', examples: [
+    { german: 'Der Chef ist mit unserer Arbeit unzufrieden.', russian: 'Начальник недоволен нашей работой.' },
+    { german: 'Ich bin unzufrieden mit meinem aktuellen Job.', russian: 'Я недоволен(на) своей нынешней работой.' },
+  ] },
+  { id: 'topic12_029', topicId: 'topic12', german: 'enttäuscht', russian: 'разочарованный', examples: [
+    { german: 'Ich war von dem Film enttäuscht.', russian: 'Я был(а) разочарован(а) фильмом.' },
+    { german: 'Sie ist enttäuscht, weil er nicht gekommen ist.', russian: 'Она расстроена, потому что он не пришёл.' },
+  ] },
+  { id: 'topic12_030', topicId: 'topic12', german: 'überrascht', russian: 'удивлённый', examples: [
+    { german: 'Ich war überrascht, dich hier zu sehen.', russian: 'Я был(а) удивлён(а) увидеть тебя здесь.' },
+    { german: 'Sie war positiv überrascht.', russian: 'Она была приятно удивлена.' },
+  ] },
+  { id: 'topic12_031', topicId: 'topic12', german: 'gespannt', russian: 'в ожидании, заинтригованный', examples: [
+    { german: 'Ich bin gespannt auf die Ergebnisse.', russian: 'Мне интересно, какие будут результаты.' },
+    { german: 'Sei gespannt, es kommt noch eine Überraschung!', russian: 'Жди, будет ещё сюрприз!' },
+  ] },
+  { id: 'topic12_032', topicId: 'topic12', german: 'erschöpft', russian: 'измученный, уставший', examples: [
+    { german: 'Nach der Arbeit bin ich völlig erschöpft.', russian: 'После работы я совершенно измотан(а).' },
+    { german: 'Sie sah nach der langen Reise erschöpft aus.', russian: 'После долгой поездки она выглядела измученной.' },
+  ] },
+  { id: 'topic12_033', topicId: 'topic12', german: 'aufgeregt', russian: 'взволнованный', examples: [
+    { german: 'Vor der Prüfung bin ich immer aufgeregt.', russian: 'Перед экзаменом я всегда волнуюсь.' },
+    { german: 'Sei nicht so aufgeregt, alles wird gut.', russian: 'Не волнуйся так, всё будет хорошо.' },
+  ] },
+  { id: 'topic12_034', topicId: 'topic12', german: 'begeistert', russian: 'восхищённый, в восторге', examples: [
+    { german: 'Die Kinder waren vom Zoo begeistert.', russian: 'Дети были в восторге от зоопарка.' },
+    { german: 'Ich bin begeistert von deiner Idee.', russian: 'Я в восторге от твоей идеи.' },
+  ] },
+  { id: 'topic12_035', topicId: 'topic12', german: 'entspannt', russian: 'расслабленный', examples: [
+    { german: 'Nach dem Urlaub fühle ich mich entspannt.', russian: 'После отпуска я чувствую себя расслабленным(ой).' },
+    { german: 'Er wirkt heute total entspannt.', russian: 'Он сегодня выглядит совершенно расслабленным.' },
+  ] },
+  { id: 'topic12_036', topicId: 'topic12', german: 'gestresst', russian: 'напряжённый, в стрессе', examples: [
+    { german: 'Ich bin diese Woche sehr gestresst.', russian: 'Я на этой неделе в сильном стрессе.' },
+    { german: 'Sie ist durch die Arbeit oft gestresst.', russian: 'Она часто в стрессе из-за работы.' },
+  ] },
+  { id: 'topic12_037', topicId: 'topic12', german: 'dringend', russian: 'срочный, безотлагательный', examples: [
+    { german: 'Ich habe eine dringende Frage.', russian: 'У меня срочный вопрос.' },
+    { german: 'Das muss dringend erledigt werden.', russian: 'Это нужно срочно сделать.' },
+  ] },
+  { id: 'topic12_038', topicId: 'topic12', german: 'nötig', russian: 'нужный, необходимый', examples: [
+    { german: 'Ist das wirklich nötig?', russian: 'Это действительно нужно?' },
+    { german: 'Ich habe alles, was nötig ist.', russian: 'У меня есть всё, что нужно.' },
+  ] },
+  { id: 'topic12_039', topicId: 'topic12', german: 'notwendig', russian: 'необходимый', examples: [
+    { german: 'Ein gutes Frühstück ist notwendig.', russian: 'Хороший завтрак необходим.' },
+    { german: 'Es ist notwendig, regelmäßig zu üben.', russian: 'Необходимо регулярно заниматься.' },
+  ] },
+  { id: 'topic12_040', topicId: 'topic12', german: 'möglich', russian: 'возможный', examples: [
+    { german: 'Ist es möglich, den Termin zu verschieben?', russian: 'Можно перенести встречу?' },
+    { german: 'So schnell wie möglich.', russian: 'Как можно быстрее.' },
+  ] },
+  { id: 'topic12_041', topicId: 'topic12', german: 'unmöglich', russian: 'невозможный', examples: [
+    { german: 'Es ist unmöglich, allen zu gefallen.', russian: 'Невозможно нравиться всем.' },
+    { german: 'Das klingt fast unmöglich.', russian: 'Это звучит почти невозможно.' },
+  ] },
+  { id: 'topic12_042', topicId: 'topic12', german: 'wahrscheinlich', russian: 'вероятный', examples: [
+    { german: 'Es wird wahrscheinlich regnen.', russian: 'Вероятно, пойдёт дождь.' },
+    { german: 'Das ist die wahrscheinlichste Erklärung.', russian: 'Это наиболее вероятное объяснение.' },
+  ] },
+  { id: 'topic12_043', topicId: 'topic12', german: 'unwahrscheinlich', russian: 'маловероятный', examples: [
+    { german: 'Es ist unwahrscheinlich, dass er heute kommt.', russian: 'Маловероятно, что он сегодня придёт.' },
+    { german: 'Eine so hohe Zahl ist unwahrscheinlich.', russian: 'Такая высокая цифра маловероятна.' },
+  ] },
+  { id: 'topic12_044', topicId: 'topic12', german: 'sicher', russian: 'уверенный; надёжный, безопасный', examples: [
+    { german: 'Bist du sicher, dass du die Tür abgeschlossen hast?', russian: 'Ты уверен(а), что закрыл(а) дверь?' },
+    { german: 'Die Straße ist nachts nicht sehr sicher.', russian: 'Улица ночью не очень безопасна.' },
+  ] },
+  { id: 'topic12_045', topicId: 'topic12', german: 'unsicher', russian: 'неуверенный; небезопасный', examples: [
+    { german: 'Ich bin mir da noch unsicher.', russian: 'Я в этом ещё не уверен(а).' },
+    { german: 'Die Gegend wirkt etwas unsicher.', russian: 'Этот район кажется немного небезопасным.' },
+  ] },
+  { id: 'topic12_046', topicId: 'topic12', german: 'deutlich', russian: 'отчётливый, ясный', examples: [
+    { german: 'Bitte sprechen Sie deutlich.', russian: 'Пожалуйста, говорите отчётливо.' },
+    { german: 'Der Unterschied ist deutlich zu sehen.', russian: 'Разница чётко видна.' },
+  ] },
+  { id: 'topic12_047', topicId: 'topic12', german: 'eindeutig', russian: 'однозначный', examples: [
+    { german: 'Seine Antwort war eindeutig.', russian: 'Его ответ был однозначным.' },
+    { german: 'Das Ergebnis ist eindeutig.', russian: 'Результат однозначный.' },
+  ] },
+  { id: 'topic12_048', topicId: 'topic12', german: 'ausführlich', russian: 'подробный', examples: [
+    { german: 'Kannst du mir das ausführlich erklären?', russian: 'Можешь мне это подробно объяснить?' },
+    { german: 'Wir hatten ein ausführliches Gespräch.', russian: 'У нас был подробный разговор.' },
+  ] },
+  { id: 'topic12_049', topicId: 'topic12', german: 'knapp', russian: 'краткий; впритык, едва', examples: [
+    { german: 'Erzähl kurz und knapp, was passiert ist.', russian: 'Расскажи коротко и ясно, что случилось.' },
+    { german: 'Die Zeit wird langsam knapp.', russian: 'Времени становится всё меньше.' },
+  ] },
+  { id: 'topic12_050', topicId: 'topic12', german: 'genau', russian: 'точный', examples: [
+    { german: 'Kennst du die genaue Adresse?', russian: 'Ты знаешь точный адрес?' },
+    { german: 'Das stimmt genau.', russian: 'Это точно так.' },
+  ] },
+  { id: 'topic12_051', topicId: 'topic12', german: 'ungenau', russian: 'неточный', examples: [
+    { german: 'Deine Beschreibung ist sehr ungenau.', russian: 'Твоё описание очень неточное.' },
+    { german: 'Die Uhr geht leider ungenau.', russian: 'Часы, к сожалению, идут неточно.' },
+  ] },
+  { id: 'topic12_052', topicId: 'topic12', german: 'zutreffend', russian: 'верный, соответствующий действительности', examples: [
+    { german: 'Ihre Antwort ist zutreffend.', russian: 'Ваш ответ верный.' },
+    { german: 'Die Aussage ist völlig zutreffend.', russian: 'Утверждение полностью верное.' },
+  ] },
+  { id: 'topic12_053', topicId: 'topic12', german: 'gleichzeitig', russian: 'одновременный', examples: [
+    { german: 'Ich kann nicht zwei Dinge gleichzeitig machen.', russian: 'Я не могу делать две вещи одновременно.' },
+    { german: 'Wir sind gleichzeitig angekommen.', russian: 'Мы пришли одновременно.' },
+  ] },
+  { id: 'topic12_054', topicId: 'topic12', german: 'ständig', russian: 'постоянный', examples: [
+    { german: 'Sie ist in letzter Zeit ständig müde.', russian: 'Она в последнее время постоянно уставшая.' },
+    { german: 'Wir haben ständig neue Aufgaben.', russian: 'У нас постоянно новые задачи.' },
+  ] },
+  { id: 'topic12_055', topicId: 'topic12', german: 'regelmäßig', russian: 'регулярный', examples: [
+    { german: 'Ich gehe regelmäßig zum Sport.', russian: 'Я регулярно хожу на спорт.' },
+    { german: 'Man sollte regelmäßig zum Zahnarzt gehen.', russian: 'К стоматологу нужно ходить регулярно.' },
+  ] },
+  { id: 'topic12_056', topicId: 'topic12', german: 'gelegentlich', russian: 'время от времени, эпизодический', examples: [
+    { german: 'Ich trinke gelegentlich ein Glas Wein.', russian: 'Иногда я пью бокал вина.' },
+    { german: 'Wir sehen uns nur gelegentlich.', russian: 'Мы видимся только время от времени.' },
+  ] },
+  { id: 'topic12_057', topicId: 'topic12', german: 'anstrengend', russian: 'утомительный, напряжённый', examples: [
+    { german: 'Der Tag war sehr anstrengend.', russian: 'День был очень утомительным.' },
+    { german: 'Diese Arbeit ist körperlich anstrengend.', russian: 'Эта работа физически тяжёлая.' },
+  ] },
+  { id: 'topic12_058', topicId: 'topic12', german: 'kompliziert', russian: 'сложный, запутанный', examples: [
+    { german: 'Die Aufgabe ist ziemlich kompliziert.', russian: 'Задача довольно сложная.' },
+    { german: 'Mach es nicht komplizierter, als es ist.', russian: 'Не усложняй это больше, чем есть.' },
+  ] },
+  { id: 'topic12_059', topicId: 'topic12', german: 'vielseitig', russian: 'разносторонний, многосторонний', examples: [
+    { german: 'Er ist ein sehr vielseitiger Mensch.', russian: 'Он очень разносторонний человек.' },
+    { german: 'Das Buch ist thematisch vielseitig.', russian: 'Книга тематически разносторонняя.' },
+  ] },
+  { id: 'topic12_060', topicId: 'topic12', german: 'wertvoll', russian: 'ценный', examples: [
+    { german: 'Dein Rat war mir sehr wertvoll.', russian: 'Твой совет был для меня очень ценным.' },
+    { german: 'Das ist ein wertvolles Geschenk.', russian: 'Это ценный подарок.' },
+  ] },
+  { id: 'topic12_061', topicId: 'topic12', german: 'wichtig', russian: 'важный', examples: [
+    { german: 'Das ist eine wichtige Entscheidung.', russian: 'Это важное решение.' },
+    { german: 'Gesundheit ist das Wichtigste.', russian: 'Здоровье — самое главное.' },
+  ] },
+  { id: 'topic12_062', topicId: 'topic12', german: 'unwichtig', russian: 'неважный', examples: [
+    { german: 'Das sind unwichtige Details.', russian: 'Это неважные детали.' },
+    { german: 'Für mich ist das völlig unwichtig.', russian: 'Для меня это совершенно неважно.' },
+  ] },
+  { id: 'topic12_063', topicId: 'topic12', german: 'nützlich', russian: 'полезный', examples: [
+    { german: 'Dein Tipp war sehr nützlich.', russian: 'Твой совет был очень полезным.' },
+    { german: 'Die App ist wirklich nützlich.', russian: 'Приложение действительно полезное.' },
+  ] },
+  { id: 'topic12_064', topicId: 'topic12', german: 'hilfreich', russian: 'полезный, помогающий', examples: [
+    { german: 'Vielen Dank, das war sehr hilfreich.', russian: 'Большое спасибо, это было очень полезно.' },
+    { german: 'Seine Erklärung war hilfreich.', russian: 'Его объяснение было полезным.' },
+  ] },
+  { id: 'topic12_065', topicId: 'topic12', german: 'schädlich', russian: 'вредный', examples: [
+    { german: 'Rauchen ist schädlich für die Gesundheit.', russian: 'Курение вредно для здоровья.' },
+    { german: 'Zu viel Sonne ist schädlich für die Haut.', russian: 'Слишком много солнца вредно для кожи.' },
+  ] },
+  { id: 'topic12_066', topicId: 'topic12', german: 'gefährlich', russian: 'опасный', examples: [
+    { german: 'Die Straße ist nachts gefährlich.', russian: 'Улица ночью опасная.' },
+    { german: 'Pass auf, das ist gefährlich!', russian: 'Осторожно, это опасно!' },
+  ] },
+  { id: 'topic12_067', topicId: 'topic12', german: 'riskant', russian: 'рискованный', examples: [
+    { german: 'Das ist mir zu riskant.', russian: 'Это для меня слишком рискованно.' },
+    { german: 'Die Investition war sehr riskant.', russian: 'Инвестиция была очень рискованной.' },
+  ] },
+  { id: 'topic12_068', topicId: 'topic12', german: 'vorsichtig', russian: 'осторожный', examples: [
+    { german: 'Sei vorsichtig beim Überqueren der Straße.', russian: 'Будь осторожен(на) при переходе улицы.' },
+    { german: 'Der Fahrer war sehr vorsichtig.', russian: 'Водитель был очень осторожным.' },
+  ] },
+  { id: 'topic12_069', topicId: 'topic12', german: 'ruhig', russian: 'спокойный, тихий', examples: [
+    { german: 'Bleib ruhig, alles wird gut.', russian: 'Оставайся спокойным, всё будет хорошо.' },
+    { german: 'Die Wohnung liegt in einer ruhigen Straße.', russian: 'Квартира находится на тихой улице.' },
+  ] },
+  { id: 'topic12_070', topicId: 'topic12', german: 'lebhaft', russian: 'оживлённый, бойкий', examples: [
+    { german: 'Wir hatten ein lebhaftes Gespräch.', russian: 'У нас был оживлённый разговор.' },
+    { german: 'Er ist ein lebhaftes Kind.', russian: 'Он живой ребёнок.' },
+  ] },
+  { id: 'topic12_071', topicId: 'topic12', german: 'beliebt', russian: 'любимый, популярный', examples: [
+    { german: 'Das Café ist bei Studenten sehr beliebt.', russian: 'Это кафе очень популярно у студентов.' },
+    { german: 'Sie ist bei ihren Kollegen beliebt.', russian: 'Её ценят среди коллег.' },
+  ] },
+  { id: 'topic12_072', topicId: 'topic12', german: 'bekannt', russian: 'известный', examples: [
+    { german: 'Dieser Schauspieler ist weltweit bekannt.', russian: 'Этот актёр известен во всём мире.' },
+    { german: 'Das Restaurant ist für seine Pizza bekannt.', russian: 'Ресторан известен своей пиццей.' },
+  ] },
+  { id: 'topic12_073', topicId: 'topic12', german: 'berühmt', russian: 'знаменитый', examples: [
+    { german: 'Sie ist eine berühmte Schriftstellerin.', russian: 'Она знаменитая писательница.' },
+    { german: 'Das Museum zeigt berühmte Gemälde.', russian: 'Музей показывает знаменитые картины.' },
+  ] },
+  { id: 'topic12_074', topicId: 'topic12', german: 'seltsam', russian: 'странный', examples: [
+    { german: 'Das Essen hat einen seltsamen Geschmack.', russian: 'У еды странный вкус.' },
+    { german: 'Er benimmt sich heute seltsam.', russian: 'Он сегодня странно себя ведёт.' },
+  ] },
+  { id: 'topic12_075', topicId: 'topic12', german: 'merkwürdig', russian: 'странный, примечательный', examples: [
+    { german: 'Was für eine merkwürdige Geschichte!', russian: 'Какая странная история!' },
+    { german: 'Das ist schon merkwürdig.', russian: 'Это, конечно, странно.' },
+  ] },
+  { id: 'topic12_076', topicId: 'topic12', german: 'ungewöhnlich', russian: 'необычный', examples: [
+    { german: 'Das ist ein ungewöhnliches Hobby.', russian: 'Это необычное хобби.' },
+    { german: 'Eine so lange Hitze ist hier ungewöhnlich.', russian: 'Такая долгая жара здесь необычна.' },
+  ] },
+  { id: 'topic12_077', topicId: 'topic12', german: 'üblich', russian: 'привычный, обыкновенный', examples: [
+    { german: 'Es ist üblich, ein Trinkgeld zu geben.', russian: 'Принято давать чаевые.' },
+    { german: 'So ist es hier üblich.', russian: 'Здесь так принято.' },
+  ] },
+  { id: 'topic12_078', topicId: 'topic12', german: 'durchschnittlich', russian: 'средний, усреднённый', examples: [
+    { german: 'Er hat durchschnittliche Noten.', russian: 'У него средние оценки.' },
+    { german: 'Der durchschnittliche Preis liegt bei 20 Euro.', russian: 'Средняя цена составляет 20 евро.' },
+  ] },
+  { id: 'topic12_079', topicId: 'topic12', german: 'überdurchschnittlich', russian: 'выше среднего', examples: [
+    { german: 'Ihre Leistungen sind überdurchschnittlich.', russian: 'Её результаты выше среднего.' },
+    { german: 'Er verdient überdurchschnittlich gut.', russian: 'Он зарабатывает выше среднего.' },
+  ] },
+  { id: 'topic12_080', topicId: 'topic12', german: 'ausreichend', russian: 'достаточный', examples: [
+    { german: 'Zwei Stunden sind dafür ausreichend.', russian: 'Двух часов для этого достаточно.' },
+    { german: 'Ich habe ausreichend Zeit.', russian: 'У меня достаточно времени.' },
+  ] },
+  { id: 'topic12_081', topicId: 'topic12', german: 'preiswert', russian: 'недорогой, выгодный по цене', examples: [
+    { german: 'Das ist ein preiswertes Angebot.', russian: 'Это выгодное предложение по цене.' },
+    { german: 'Hier kann man preiswert essen.', russian: 'Здесь можно недорого поесть.' },
+  ] },
+  { id: 'topic12_082', topicId: 'topic12', german: 'teuer', russian: 'дорогой', examples: [
+    { german: 'Diese Jacke ist mir zu teuer.', russian: 'Эта куртка мне слишком дорогая.' },
+    { german: 'In der Altstadt ist alles teurer.', russian: 'В старом городе всё дороже.' },
+  ] },
+  { id: 'topic12_083', topicId: 'topic12', german: 'günstig', russian: 'выгодный, удобный, недорогой', examples: [
+    { german: 'Ich habe das Ticket günstig gekauft.', russian: 'Я купил(а) билет недорого.' },
+    { german: 'Das ist ein sehr günstiges Angebot.', russian: 'Это очень выгодное предложение.' },
+  ] },
+  { id: 'topic12_084', topicId: 'topic12', german: 'erschwinglich', russian: 'доступный по цене', examples: [
+    { german: 'Die Preise sind noch erschwinglich.', russian: 'Цены ещё приемлемые.' },
+    { german: 'Das ist eine erschwingliche Wohnung.', russian: 'Это доступная по цене квартира.' },
+  ] },
+  { id: 'topic12_085', topicId: 'topic12', german: 'umweltfreundlich', russian: 'экологичный, безвредный для природы', examples: [
+    { german: 'Ein Fahrrad ist umweltfreundlich.', russian: 'Велосипед экологичен.' },
+    { german: 'Wir kaufen nur umweltfreundliche Produkte.', russian: 'Мы покупаем только экологичные продукты.' },
+  ] },
+  { id: 'topic12_086', topicId: 'topic12', german: 'nachhaltig', russian: 'устойчивый, долгосрочный, экологичный', examples: [
+    { german: 'Wir wollen nachhaltig leben.', russian: 'Мы хотим жить экологично/устойчиво.' },
+    { german: 'Das Unternehmen handelt nachhaltig.', russian: 'Компания действует устойчиво.' },
+  ] },
+  { id: 'topic12_087', topicId: 'topic12', german: 'gesund', russian: 'здоровый', examples: [
+    { german: 'Obst und Gemüse sind gesund.', russian: 'Фрукты и овощи полезны для здоровья.' },
+    { german: 'Ich fühle mich heute wieder gesund.', russian: 'Я сегодня снова чувствую себя здоровым(ой).' },
+  ] },
+  { id: 'topic12_088', topicId: 'topic12', german: 'ungesund', russian: 'нездоровый, вредный для здоровья', examples: [
+    { german: 'Fast Food ist ungesund.', russian: 'Фастфуд нездоровый.' },
+    { german: 'Zu wenig Schlaf ist ungesund.', russian: 'Мало сна — вредно для здоровья.' },
+  ] },
+  { id: 'topic12_089', topicId: 'topic12', german: 'bewusst', russian: 'осознанный, намеренный', examples: [
+    { german: 'Ich habe das ganz bewusst getan.', russian: 'Я сделал(а) это совершенно намеренно.' },
+    { german: 'Sie lebt sehr bewusst.', russian: 'Она живёт очень осознанно.' },
+  ] },
+  { id: 'topic12_090', topicId: 'topic12', german: 'unbewusst', russian: 'неосознанный, бессознательный', examples: [
+    { german: 'Ich habe die Tür unbewusst geschlossen.', russian: 'Я неосознанно закрыл(а) дверь.' },
+    { german: 'Viele Reaktionen passieren unbewusst.', russian: 'Многие реакции происходят бессознательно.' },
+  ] },
+  { id: 'topic12_091', topicId: 'topic12', german: 'erfolgreich', russian: 'успешный', examples: [
+    { german: 'Er ist sehr erfolgreich in seinem Beruf.', russian: 'Он очень успешен в своей профессии.' },
+    { german: 'Die Präsentation war erfolgreich.', russian: 'Презентация была успешной.' },
+  ] },
+  { id: 'topic12_092', topicId: 'topic12', german: 'erfolglos', russian: 'безуспешный, неудачный', examples: [
+    { german: 'Seine Versuche blieben erfolglos.', russian: 'Его попытки остались безуспешными.' },
+    { german: 'Sie bewarb sich erfolglos bei mehreren Firmen.', russian: 'Она безуспешно подавала заявки в несколько фирм.' },
+  ] },
+  { id: 'topic12_093', topicId: 'topic12', german: 'zukünftig', russian: 'будущий', examples: [
+    { german: 'Wir denken an unsere zukünftige Familie.', russian: 'Мы думаем о нашей будущей семье.' },
+    { german: 'Meine zukünftige Wohnung liegt im Zentrum.', russian: 'Моя будущая квартира находится в центре.' },
+  ] },
+  { id: 'topic12_094', topicId: 'topic12', german: 'vergangen', russian: 'прошедший, былой', examples: [
+    { german: 'Die vergangene Woche war sehr stressig.', russian: 'Прошедшая неделя была очень напряжённой.' },
+    { german: 'Im vergangenen Jahr war ich in Spanien.', russian: 'В прошлом году я был(а) в Испании.' },
+  ] },
+  { id: 'topic12_095', topicId: 'topic12', german: 'modern', russian: 'современный', examples: [
+    { german: 'Die Wohnung ist modern eingerichtet.', russian: 'Квартира обставлена в современном стиле.' },
+    { german: 'Er trägt moderne Kleidung.', russian: 'Он носит современную одежду.' },
+  ] },
+  { id: 'topic12_096', topicId: 'topic12', german: 'altmodisch', russian: 'старомодный', examples: [
+    { german: 'Seine Ansichten sind etwas altmodisch.', russian: 'Его взгляды несколько старомодны.' },
+    { german: 'Das ist ein altmodischer Hut.', russian: 'Это старомодная шляпа.' },
+  ] },
+  { id: 'topic12_097', topicId: 'topic12', german: 'praktisch', russian: 'практичный, практический', examples: [
+    { german: 'Dieses Werkzeug ist sehr praktisch.', russian: 'Этот инструмент очень практичный.' },
+    { german: 'Praktisch gesehen ist das einfacher.', russian: 'С практической точки зрения это проще.' },
+  ] },
+  { id: 'topic12_098', topicId: 'topic12', german: 'theoretisch', russian: 'теоретический', examples: [
+    { german: 'Theoretisch ist alles möglich.', russian: 'Теоретически всё возможно.' },
+    { german: 'Wir haben das nur theoretisch behandelt.', russian: 'Мы это рассматривали только теоретически.' },
+  ] },
+  { id: 'topic12_099', topicId: 'topic12', german: 'sinnvoll', russian: 'осмысленный, разумный', examples: [
+    { german: 'Es ist sinnvoll, früh zu beginnen.', russian: 'Имеет смысл начать пораньше.' },
+    { german: 'Das klingt nach einer sinnvollen Idee.', russian: 'Это звучит как разумная идея.' },
+  ] },
+  { id: 'topic12_100', topicId: 'topic12', german: 'sinnlos', russian: 'бессмысленный', examples: [
+    { german: 'Es ist sinnlos, jetzt zu streiten.', russian: 'Сейчас бессмысленно спорить.' },
+    { german: 'Der Versuch war völlig sinnlos.', russian: 'Попытка была совершенно бессмысленной.' },
+  ] },
 ];
